@@ -10,21 +10,45 @@
     width: 100%;
     width: 100%;
     z-index: 1;
+    user-select: none;
     
     span {
         align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        .header-title {
+
+        .header-item {
+            cursor: pointer;
             font-family: Inter;
+            font-size: 1.5em;
+            font-weight: 300;
+            user-select: none;
+        }
+        
+        .header-title {
+            cursor: pointer;
             font-size: 2em;
             font-weight: 800;
         }
         
-        .primary-separator {
-            width: 80vw;
+        .separator {
+            background: var(--system-gray);
             height: 1px;
+            margin: 0 20px 0 20px;
+            opacity: .5;
+            
         }
+
+        .separator.primary{
+            width: 60vw;
+        }
+
+        .separator.secondary {
+            width: 2vw;
+        }
+        
+
+
     }
 }
