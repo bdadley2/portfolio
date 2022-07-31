@@ -4,4 +4,9 @@
 html, body {
     margin: 0;
     height: auto;
+    width: 100vw;
+}
+
+.section, .section-window {
+    width: 100%;
 }

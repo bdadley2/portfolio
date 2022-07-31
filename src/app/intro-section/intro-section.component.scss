@@ -1,0 +1,85 @@
+@import url('../../animations.scss');
+
+.fade-up-out.aos-animate {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+}
+
+.section.intro, intro {
+    display: flex;
+    height: 200vh;
+
+    .section-window.intro {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+
+        .title {
+            color: white;
+            font-weight: 700;
+            font-size: 100px;
+            text-align: center;
+            position: sticky;
+            top: 35vh;
+
+            #name  {
+                font-size: 110px;
+            }
+
+            .colors {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                z-index: -10;
+            }
+
+            .title-header {
+                display: inline-block;
+                white-space: pre;
+            }
+            
+
+            .title-item {
+                left: 0;
+                position: absolute;
+                width: 100%;
+            }
+
+            .colors-text {
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background-size: 400% 400%;
+                animation: gradient 10s ease infinite;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            #intro-arrow {
+                animation: bounce 3s ease infinite;
+            }
+        }
+    }
+}
+
+.fade-out.aos-animate {
+    opacity: 0;
+}
+
+
+[data-aos="testtt"] {
+    width: 0;
+    left: 50%;
+    height: 0;
+    border-radius: 0;
+    background-color: transparent;
+    position: absolute;
+    padding: 100px 100px 100px 100px;
+    &.aos-animate {
+    
+      padding: 0 0 0 0;
+      border-radius: 100%;
+      background-color: red;
+    }
+  }
+  
