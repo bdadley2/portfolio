@@ -1,13 +1,7 @@
 @import url('../../animations.scss');
 
-.fade-up-out.aos-animate {
-    opacity: 0;
-    transform: translate3d(0, -100px, 0);
-}
-
-.section.intro, intro {
-    display: flex;
-    height: 200vh;
+.section.intro {
+    height: 250vh;
 
     .section-window.intro {
         height: 100vh;
@@ -61,25 +55,4 @@
         }
     }
 }
-
-.fade-out.aos-animate {
-    opacity: 0;
-}
-
-
-[data-aos="testtt"] {
-    width: 0;
-    left: 50%;
-    height: 0;
-    border-radius: 0;
-    background-color: transparent;
-    position: absolute;
-    padding: 100px 100px 100px 100px;
-    &.aos-animate {
-    
-      padding: 0 0 0 0;
-      border-radius: 100%;
-      background-color: red;
-    }
-  }
   

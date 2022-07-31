@@ -1,0 +1,37 @@
+@import url('../../animations.scss');
+
+.section.statements {
+    position: absolute;
+    top: 75vh;
+    height: 500vh;
+
+    .section-window.statements {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .box-border {
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          background-color: var(--system-red);
+          transition-property: background-color; 
+          transition-duration: 100ms;
+          border: none;
+        }
+
+        .box {
+          background: black;
+          position: absolute;
+          inset: 10px;
+          transition-property: inset; 
+          transition-duration: 100ms;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    }
+}
